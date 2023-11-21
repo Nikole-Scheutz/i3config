@@ -618,3 +618,9 @@ focus_follows_mouse no
 
 exec copyq
 exec xrandr --output HDMI1 --primary
+
+# warpd hotkeys
+
+bindsym Mod4+Mod1+m exec warpd --hint
+bindsym Mod4+Mod1+l exec warpd --normal
+bindsym Mod4+Mod1+n exec warpd --grid
