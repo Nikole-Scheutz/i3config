@@ -243,6 +243,8 @@ set $ws10 "10"
 
 # automatic set focus new window if it opens on another workspace then the current:
 for_window [class=Xfce4-terminal] focus
+for_window [class=Xfce4-terminal] border pixel 1 1
+for_window [class=Xfce4-terminal] hide_edge_borders both
 for_window [class=(?i)Brave-browser] default border none
 for_window [class=Brave-browser] default border none
 for_window [class=brave-browser] default border none
