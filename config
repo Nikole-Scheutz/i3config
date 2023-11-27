@@ -50,14 +50,16 @@ workspace_layout default
 new_window pixel 0
 
 # thin borders
-hide_edge_borders both
+#hide_edge_borders both
 
 # Set inner/outer gaps
-#gaps inner 1
-#gaps outer 1
+gaps inner -0
+gaps outer -0
 
 # show window title bars (not officially supported with i3gaps)
-#default_border normal
+default_border pixel
+
+hide_edge_borders both
 
 # window title alignment
 #title_align center
@@ -241,6 +243,9 @@ set $ws10 "10"
 
 # automatic set focus new window if it opens on another workspace then the current:
 for_window [class=Xfce4-terminal] focus
+for_window [class=(?i)Brave-browser] default border none
+for_window [class=Brave-browser] default border none
+for_window [class=brave-browser] default border none
 for_window [class=(?i)firefox] focus
 for_window [class=Thunar] focus
 for_window [class=Thunderbird] focus
