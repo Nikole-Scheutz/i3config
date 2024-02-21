@@ -602,6 +602,8 @@ bindcode $mod+33 layout stacking
 bindsym $mod+y layout tabbed
 bindsym $mod+u layout toggle split
 
+bindcode $mod+53 move workspace to output next
+
 bindsym $mod+Shift+space floating toggle
 
 # change focus between tiling / floating windows
